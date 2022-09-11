@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+body{
+    background-image: url("A.jpg");
+    background-attachment: fixed;
+}
+
+h2{
+    margin-top: 50px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+h2 span{
+    margin-top: 50px;
+    font-size: 40px;
+    color: greenyellow;
+    text-align: center;
+}
+form{
+    color: greenyellow;
+    padding-top: 20px;
+    padding-left: 100px;
+    width: 600px;
+min-height:50vh ;
+    border: 2px solid lightgray;
+    margin-top:50px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 10%;
+}
+form label{
+    font-size: 30px;
+    font-family: serif;
+    margin: 0px;
+}
+form input[type="text"]{
+    
+    margin: 10px;
+    width: 450px;
+    font-size: 20px;
+}
+
+
+form input[type="email"]{
+    margin: 10px;
+    width: 480px;
+    font-size: 20px;
+}
+form input[type="password"]{
+    margin: 10px;
+    width: 440px;
+}
+form  label select{
+    padding: 5px;
+}
+form  label input{
+    margin: 10px;
+    padding: 6px;
+} 
+form input[type="submit"]{
+    margin: 10px;
+    padding: 20px;
+    width: 120px;
+    border: none;
+    border-radius: 50%;
+    background-color: deeppink;
+    color: #fff;
+}
+form input[type="reset"]{
+    margin: 10px;
+    padding: 20px;
+    width: 120px;
+    border: none;
+    border-radius: 50%;
+    background-color: deeppink;
+    color: #fff;
+}
+#nav_container{
+    margin-left: 15px;
+}
+#nav_container a{
+    text-decoration: none;
+}
+ #nav_container .h_nav{
+    color:white;
+    text-align: left;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-left: 200px;
+     
+}
+#nav_container nav ul li i{
+    color: white;
+}
+
+#nav_container .h_nav span{
+color: yellowgreen;
+font-size: 30px;
+}
+#nav_container .h_nav span:hover{
+    color: deeppink;
+    font-size: 31px;
+}
+nav ul{
+    margin-top: -60px;
+    margin-left: 550px;
+    
+}
+nav ul li{
+    border-radius: 6px;
+    display: inline-block;
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 65px;
+
+}
+nav ul li a{
+    
+    font-size: 22px;
+    width: 100%;
+    color: greenyellow;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    transition-duration: 3.2s ease-in;
+}
+nav ul li a:hover{
+    color: deeppink;
+    transition-duration: 3.2s ease;
+} 
+
+</style>
+<body>
+    <div id="nav_container">
+        <nav>
+          <a href="http://127.0.0.1:5500/index.html#home"><h2 class="h_nav">POrTf<span>oLiO</span></h2></a> 
+        <ul>
+       <li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+       <li><i class="fas fa-phone"></i><a href="contact.html" target="_blank" >Contact Us</a></li>
+       <li><i class="fas fa-book"></i><a href="about.html" target="_blank">About Us</a></li>
+       <li><i class="fas fa-caret-down"></i><a href="services.html" target="_blank">Services</a></li>
+        </ul>
+        </nav>
+       </div>
+    <div class="form_container">   
+    <h2 class="contact_heading">Contact<span> Us</span> </h2>
+
+     <form action="mailto:princemirzaali@gmail.com" method="get">
+    <label for="fname">
+        Name:<br/><input type="text" name="fname" required placeholder="Enter your Name">
+    </label>
+    <label for="eml"><br><br>
+        Email: <input type="email" required placeholder="Enter Your Email">
+    </label><br><br>
+    <label for="psw">
+        Password: <input type="Password" required placeholder="Enter your Password">
+    </label><br><br>
+    <label for="phone">
+        Phone: <select>
+            <option value="+92">+92</option>
+            <option value="+91">+91</option>
+            <option value="+72">+71</option>
+        </select>
+        <input type="number">
+    </label>
+    <br/>
+    <br/>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+ </form>
+</div>   
+</body>
+</html>
